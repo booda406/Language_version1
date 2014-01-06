@@ -5,8 +5,5 @@ class ApplicationController < ActionController::Base
   def template_01_volumes
   end
 
-  def template_01_certificate
-  end
-
   protect_from_forgery with: :exception
 end
