@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LanguageVersion1</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Taiwan Journal of Linguistics</title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
+<div class="wrapper">
+    <!-- Header and Nav -->
+  <div class="row" >
+    <div class="large-12 columns top">
+      <div class="panel">
+        <div class="row">
+          <div class="medium-2 columns">
+            <img src="image/thci-core.png">
+          </div>
+          <div class="medium-10 columns">
+            <h1>Taiwan Journal of Linguistics</h1>
+            <h2>An Open Access Journal</h2>
+            <h5>ISSN: 1729-4649(print); 1994-2559(online)</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Header and Nav -->
+  <div class="row">
+ <!-- Nav Sidebar -->
+    <!-- This is source ordered to be pulled to the left on larger screens -->
+    <div class="large-3 columns ">
+      <div class="panel">
+          <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+            <h5 class="title"><a href="template_01_volumes.html">Volumes</a></h5>
+            <h5 class="title"><a href="template_01_history.html">History</a></h5>
+            <h5 class="title"><a href="template_01_certificate.html">Certificate</a></h5>
+            <h5 class="title"><a href="template_01_editors.html">Editors</a></h5>
+            <h5 class="title"><a href="template_01_contributors.html">Contributors</a></h5>
+            <h5 class="title"><a href="template_01_publication.html">Publication</a></h5>
+            <h5 class="title"><a href="template_01_subscription.html">Subscription</a></h5>
+            <h5 class="title"><a href="template_01_policy.html">Editorial Policy</a></h5>
+        </div>
+      </div>
+    </div>
 
 <%= yield %>
-
+	</div>
+  <!-- Footer -->
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-12 columns">
+          <ul class="inline-list right">
+            <li><a href="template_01_volumes.html">Volumes</a></li>
+            <li><a href="template_01_history.html">History</a></li>
+            <li><a href="template_01_certificate.html">Certificate</a></li>
+            <li><a href="template_01_editors.html">Editors</a></li>
+            <li><a href="template_01_contributors.html">Contributors</a></li>
+            <li><a href="template_01_publication.html">Publication</a></li>
+            <li><a href="template_01_subscription.html">Subscription</a></li>
+            <li><a href="template_01_policy.html">Editorial Policy</a></li>
+          </ul>
+        </div> 
+        <div class="large-12 columns">
+          <p class="right">© Copyright Taiwan Journal of Linguistics</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
 </body>
 </html>
