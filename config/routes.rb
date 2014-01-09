@@ -2,13 +2,20 @@ LanguageVersion1::Application.routes.draw do
 
 
   get "volumes" => "application#template_01_volumes"
+  get "volumes_title" => "application#template_01_volumes_title"
+  get "volumes_article" => "application#template_01_volumes_article"
+  get "volumes" => "application#template_01_volumes"
   get "certificate" => "application#template_01_certificate"
   get "contributors" => "application#template_01_contributors"
-  get "editors" => "application#template_01_certificate"
-  get "history" => "application#template_01_certificate"
-  get "policy" => "application#template_01_certificate"
-  get "publication" => "application#template_01_certificate"
-  get "subscription" => "application#template_01_certificate"
+  get "editors" => "application#template_01_editors"
+  get "history" => "application#template_01_history"
+  get "policy" => "application#template_01_policy"
+  get "subscription" => "application#template_01_subscription"
+  get "publication" => "application#template_01_publication"
+  get "publication_books_title" => "application#template_01_publication_books_title"
+  get "publication_books_article" => "application#template_01_publication_books_article"
+  get "publication_monograph_title" => "application#template_01_publication_monograph_title"
+  get "publication_monograph_article" => "application#template_01_publication_monograph_article"
 
   root to: "application#template_01_volumes"
   # The priority is based upon order of creation: first created -> highest priority.

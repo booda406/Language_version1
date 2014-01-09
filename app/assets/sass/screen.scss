@@ -5424,10 +5424,17 @@ body{
 .wrapper{
     background-color:rgba(250, 250, 250, 1);
     width:auto; margin: 0 auto; max-width: 980px;
+    box-shadow: 2px 2px 12px rgba(17, 17, 17, 0.7);
 }
 
 .top {
   .panel{
-    background-color:rgba(1, 37, 97, 0.4);
+  background-image: url('sky.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  h1, h2{
+    font-weight: 700;
+  }
 }
 }
